@@ -1,3 +1,10 @@
+import {ReportComponent} from './app/components/report/report.component';
+import {TaskAddComponent} from './app/components/task-add/task-add.component';
+import {TaskListComponent} from './app/components/task-list/task-list.component';
+import {RecordListComponent} from './app/components/record-list/record-list.component';
+import {ProjectEditComponent} from './app/components/project-edit/project-edit.component';
+import {ProjectAddComponent} from './app/components/project-add/project-add.component';
+import {ProjectListsComponent} from './app/components/project-lists/project-lists.component';
 import { TablesSimpleComponent } from './app/components/tables-simple/tables-simple.component'
 import { UiModalComponent } from './app/components/ui-modal/ui-modal.component'
 import { UiTimelineComponent } from './app/components/ui-timeline/ui-timeline.component'
@@ -28,6 +35,13 @@ import { LoginFormComponent } from './app/components/login-form/login-form.compo
 import { RegisterFormComponent } from './app/components/register-form/register-form.component'
 
 angular.module('app.components')
+	.component('report', ReportComponent)
+	.component('taskAdd', TaskAddComponent)
+	.component('taskList', TaskListComponent)
+	.component('recordList', RecordListComponent)
+	.component('projectEdit', ProjectEditComponent)
+	.component('projectAdd', ProjectAddComponent)
+	.component('projectLists', ProjectListsComponent)
   .component('tablesSimple', TablesSimpleComponent)
   .component('uiModal', UiModalComponent)
   .component('uiTimeline', UiTimelineComponent)

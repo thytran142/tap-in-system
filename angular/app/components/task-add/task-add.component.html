@@ -1,0 +1,40 @@
+<section class="content-header">
+<h1>Add new task</h1>
+<ol class="breadcrumb">
+    <li><a ui-sref="app.landing"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li><a href="#/task-lists">Task List</a></li>
+    <li class="active">Add new </li>
+  </ol>
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-sm-12 col-md-7">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Add Task</h3>
+                </div>
+                <form class="form" name="addProjectForm" ng-submit="vm.save(addProjectForm.$valid)" novalidate>
+                    <div class="box-body">
+                        <div ng-if="vm.alerts" class="alert alert-{{alert.type}}" ng-repeat="alert in vm.alerts">
+                            <h4>{{alert.title}}</h4>
+                            <p>{{alert.msg}}</h4>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Name</label>
+                        <input type="text" class="form-control" ng-model="vm.name" name="name" placeholder="Task name" required>
+                        <p ng-show="addProjectForm.name.$error.required && (vm.formSubmitted || addProjectForm.name.$touched)" class="help-block">Name is required</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Project</label>
+                         <select class="form-control" ng-model="vm.project_id" ng-options="object.id as object.name for object in vm.lsProject">
+                        </select>
+                     </div>
+                    <div class="box-footer">
+                        <a ui-sref="app.tasks" class="btn btn-default"><i class="fa fa-angle-double-left"></i>Back</a>
+                        <button type="submit" class="btn btn-primary pull-right">Add new </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -154,14 +154,74 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         alerts: null
       }
     })
-    .state('app.userlist', {
-      url: '/user-lists',
+    .state('app.tasks',{
+      url: '/task-list',
       data: {
         auth: true
       },
       views: {
         'main@app': {
-          template: '<user-lists></user-lists>'
+          template: '<task-list></task-list>'
+        }
+      }
+    })
+    .state('app.taskadd',{
+      url: '/task-add',
+      data: {
+        auth: true
+      },
+      views: {
+        'main@app': {
+          template: '<task-add></task-add>'
+        }
+      }
+    })
+    .state('app.projects', {
+      url: '/project-lists',
+      data: {
+        auth: true
+      },
+      views: {
+        'main@app': {
+          template: '<project-lists></project-lists>'
+        }
+      }
+    })
+    
+    .state('app.projectadd',{
+      url: '/projectadd',
+      data: {
+        auth: true
+      },
+      views: {
+        'main@app': {
+          template: '<project-add></project-add>'
+        }
+      }
+    })
+    .state('app.projectedit',{
+      url: '/project-edit/:projectId',
+      data: {
+        auth: true
+      },
+      views: {
+        'main@app': {
+          template: '<project-edit></project-edit>'
+        }
+      },
+      params: {
+        alerts: null,
+        projectId: null
+      }
+    })
+    .state('app.report',{
+      url: '/report',
+      data: {
+        auth: true 
+      },
+      views: {
+        'main@app': {
+          template: '<report></report>'
         }
       }
     })

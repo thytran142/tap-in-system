@@ -1,0 +1,39 @@
+<section class="content">
+<div class="row">
+  <div class="box">
+    <div class="box-header with-border">
+      <h3 class="box-title">Report</h3>
+    </div>
+    
+    <div class="box-body">
+        <form class="form">
+            <div class="form-group">
+                <label class="control-label">Project</label>
+                <select class="form-control" ng-model="vm.project_id" ng-options="object.id as object.name for object in vm.lsProject" ng-change="vm.retrieveTaskList()">
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="box-body">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Task Name </td>
+                    <td>Duration (hrs)</td> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="object in vm.lsRecord">
+                    <td>{{object.id}}</td>
+                    <td>{{object.task_name}}</td>
+                    <td>{{object.duration}}</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>
+   
+  </div>
+</div>
+</section>
