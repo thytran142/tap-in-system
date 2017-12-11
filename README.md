@@ -2,13 +2,18 @@
 Laravel + Angularjs + Bootstrap + AdminLTE binded by Gulp workflow Admin Dashboard Boilerplate.
 
 ## Screenshots
-![]({{site.baseurl}}/http://vanntechs.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-8.36.48-PM.png)
 
-![]({{site.baseurl}}/http://vanntechs.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-8.40.07-PM.png)
 
-You tap in and choose the project with the task. 
-![]({{site.baseurl}}/http://vanntechs.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-8.41.09-PM.png)
 
+
+
+Login screen 
+<img src="http://vanntechs.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-8.36.48-PM.png">
+Dashboard screen 
+<img src="http://vanntechs.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-8.40.07-PM.png">
+
+You tap in and choose the project with the task, and view the report : total number of hours you complete with each task for each project.
+<img src="http://vanntechs.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-8.41.09-PM.png">
 
 Use the following credentials to login.
 > admin@example.com / password
